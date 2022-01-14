@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+    <body>
+        <canvas width=300 height=300 id="ccc"></canvas>
+
+     <script>
+
+
+        let can = document.getElementById("ccc");
+        let con = can.getContext("2d");
+
+        con.fillStyle="red";
+        con.fillRect(0,0,100,100);
+
+        can.onmousemove = function(e){
+            let x = (Math.random()*400).toFixed();
+            let y = (Math.random()*400).toFixed();
+            can.style.position = "absolute"
+            can.style.left = x + "px";
+            can.style.top = y + "px";
+            
+        }
+
+
+     </script>
+
+
+
+
+
+    </body>
+</HTML>
